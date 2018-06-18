@@ -1,26 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-</head>
-<body>
+Change Log of JSF Client
+====
+The current stable version : **[1.5.5]**
 
-<section class="page-header">
-    <h1 class="project-name">你好，世界</h1>
-    <h2 class="project-tagline">努力让自己真正的从事技术工种，而不是熟练工种</h2>
-</section>
+###jsf-1.5.5 (2015-11-24)
+- 新增功能:
+- 在注册中心回调和telnet时增加ifaceId映射关系的查看。
+- bugfix:
+- 修复了Msgpack反序列化特殊类中调用readResolve后未更新引用的bug。
+- 优化功能:
+- 部分日志级别从ERROR改到WARN。
 
-<section class="main-content">
-    　　　　<h2>hello world ....</h2>
-    　　<p>我的第一篇文章</p>
-    　　<p>lalalalala</p>
+###jsf-1.5.3 (2015-10-26)
+- bugfix:
+- 修复了一个telnet命令触发的worker线程hashmap死锁问题。
+- 修复了一个通过javassist不停的创建代理类时，未销毁缓存，可能导致内存溢出的问题。
+- 修复了Consumer在用API方式进行启动失败后计数器还加1的问题。
 
-</section>
-
-</body>
-</html>
